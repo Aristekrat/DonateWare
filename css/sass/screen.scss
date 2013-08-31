@@ -18,6 +18,8 @@
 
 body {
 	font-family: arial, sans-serif; 
+	margin: 0; 
+	padding: 0; 
 }
 
 h1, h2, h3 {
@@ -46,12 +48,11 @@ input:focus {
 	box-shadow: inset 0px 0px 2px #d0392a, 0px 0px 2px #eee; 
 }
 
+/*****Shared Classes*****/
+
 .container {
-	max-width:	 1400px;
 	width:		100%;
 }
-
-//	Shared Classes
 
 .dbutton {
 	cursor: pointer; 
@@ -67,22 +68,25 @@ input:focus {
 		box-shadow: 0 0 0 #fff; 
 }
 
-//	Intro Page
+/*****Intro Page*****/
+
 .introHeaderContainer {
 	text-align: center; 
 	padding: 1.5% 0 1.5% 0;
 	background-color: #f8e3d7; 
 	color: #c41200;
 	text-shadow: 0px 1px 1px #f3730c;
-	box-shadow: 0px 1px 3px #999;  
+	box-shadow: 0px 1px 3px #999;
+	margin-top: 0; 
 }	.introHeaderContainer p {
 	margin: 0.5% 0 0 0; 
+}	.introHeaderContainer h1 {
+	margin: 0 0 0 0; 
 }
 
-#introPage section {
-	width: 100%; 
+#introPage section { 
 	height: 35%;
-	min-height: 250px;  
+	min-height: 300px;  
 	line-height: 125%; 
 	 
 }	#introPage section h2 {
@@ -97,6 +101,8 @@ input:focus {
 
 #introTopPanel {
 	border-bottom: 1px solid #eee;
+	max-height: 250px; 
+	width: 100%;
 }	#introTopPanel div {
 	width:		40%; 
 	float:		left; 
@@ -106,7 +112,7 @@ input:focus {
 	float: left; 
 	margin:	1% 9.5% 0.5% 0.5%;
 	width: 37%; 
-	min-height: 220px; 
+	height: 100%; 
 }	#introTopPanel aside span {
 		display: inline-block;
 		margin: 0 0.5% 0 0.5%;   
@@ -122,32 +128,33 @@ input:focus {
 		margin: 10% 5% 0 20% !important;
 		border-radius: 50%; 
 		cursor: pointer; 
+		box-shadow: 1px 1px 1px 0 #888; 
 }				#bitCoinTwitter {
-		background: #d26458 url("./twitter.png") 50% no-repeat;
+		background: #F8E3D7 url("./twitter.png") 50% no-repeat;
 }				#bitCoinFB {
 		margin: 5% 0 0 0; 
-		background: #d26458 url("./facebook.png") 50% no-repeat;
+		background: #F8E3D7 url("./facebook.png") 50% no-repeat;
 }				#bitCoinTwitter:hover, #bitCoinFB:hover {
-		background-color: #D0392A;
+		background-color: #f6be9d;
 }				#bitCoinSocialBar p {
 		color: #999; 
 		font-size: 0.9em;
-		margin: 7.5% 0 0 0;
+		margin: 8.5% 0 0 0;
 }
-		.bitCoinLeftBox {
+	.bitCoinLeftBox {
 		float: left;
 		width: 65.5%;
 		margin: 0; 
-}			#bitCoinInfoBawks {
+}		#bitCoinInfoBawks {
 		height: 40%;
-}				#bitCoinInfoBawks p {
+}			#bitCoinInfoBawks p {
 					width: 30%; 
 					float: left;
 					display: inline-block; 
 					text-align: center;
 					margin-top: 2%; 
 					color: #444; 
-				}	#bitCoinInfoBawks p strong {
+}			#bitCoinInfoBawks p strong {
 					font-weight: bold; 
 					font-size: 1.4em; 
 					text-shadow: 0px 1px 0px #999;
@@ -166,18 +173,19 @@ input:focus {
 		width: 51%;
 		float: left; 
 		position: relative; 
-		left: 5%; 
-		padding-top: 3%; 
+		left: 17%; 
+		padding-top: 4%; 
 	}			#bitCoinCallField iframe {
-		padding: 2% 0 0 13%; 
+		 
 	}			#bitCoinCallField p {
 		color: #999;
-		text-align: center; 
+		text-align: left; 
 		font-size: 0.9em;
 	}		
 
 #introMiddlePanel {
-
+	max-height: 250px; 
+	width: 100%;
 }	#introMiddlePanel div {
 	width:		40%; 
 	float:		right; 
@@ -186,6 +194,8 @@ input:focus {
 } 	#introMiddlePanel figure { 
 	width:	33% !important;
 	margin: 0 0 0 17%; 
+}		#introMiddlePanel figure img {
+	margin-top: 1.2em;
 }
 
 #introBottomPanel {
@@ -193,8 +203,7 @@ input:focus {
 	box-shadow: 0px 2px 3px 2px #000; 
 	position: relative;
 	z-index: 10; 
-	height: 30% !important; 
-	min-height: 150px !important; 
+	width: 100%; 
 }	#introBottomPanel div {
 		width: 100%; 
 		padding: 1% 0 0 0; 
@@ -216,7 +225,7 @@ input:focus {
 		display: inline-block; 
 }		#introMainCall p {
 		text-align: center; 
-		margin: 10% 0 0 0;
+		margin: 1.8em 0 0 0;
 		color: #fff;  
 		font-size: 1.4em; 
 		text-shadow: -1px -1px 1px #555; 
@@ -226,9 +235,7 @@ input:focus {
 		box-shadow: 0 0 0 #fff; 
 }
 
-//	End Intro Page
-
-//	Prototype
+/*****Prototype*****/
 
 #uploadButton {
 	width:	6%; 
@@ -265,7 +272,6 @@ input:focus {
 	width: 20%; 
 	margin: 0 0 0 10%; 
 	display: inline-block; 
-
 }	
 
 #mainSearchResults {
@@ -316,4 +322,148 @@ input:focus {
 	}	#dgitHubNote a {
 		color: #D0392A;
 	}
-//	End Prototype
+	
+/*****Media Queries*****/
+
+@media screen and (max-width: 1720px) and (min-width: 1580px){
+	#bitCoinCallField  { 
+		left: 15%;
+	}
+}
+@media screen and (max-width: 1579px) and (min-width: 1380px){
+		#bitCoinCallField  { 
+		left: 13%;
+	}	
+}
+@media screen and (max-width: 1379px) and (min-width: 1300px){
+		#bitCoinCallField  { 
+		left: 12%;
+	}	
+}
+@media screen and (max-width: 1299px) and (min-width: 1200px){
+		#bitCoinCallField  { 
+		left: 11%;
+	}	#bitCoinCallField p {
+		margin-left: -3%; 
+	}
+}
+@media screen and (max-width: 1199px) and (min-width: 1051 px){
+		#bitCoinCallField  { 
+		left: 10%;
+	}	#bitCoinCallField p {
+		margin-left: -3%; 
+	}
+}
+	
+/***Tablets***/ 
+@media screen and (max-width: 1050px) and (min-width: 600px){
+
+#introTopPanel, #introMiddlePanel  {
+	min-height: 500px !important;
+	border-bottom: 0px solid #fff; 
+}	#introTopPanel div, #introTopPanel aside {
+	width: 90%;
+	height: 250px;  
+}		#introTopPanel div {
+	margin: 1% 0 0 1%;
+}		#introTopPanel aside {
+ 
+}
+
+#introMiddlePanel div {
+	width: 90%; 
+	margin: 1% 0 0 1%; 
+	float: left; 
+}		#introMiddlePanel figure img {
+	margin-top: 2.5em !important;
+}
+
+#introMainCall {
+	width:	50%; 
+	margin: 1.5% 25% 0 25%; 
+}
+}
+
+@media screen and (max-width: 599px) and (min-width: 240px){
+#introTopPanel, #introMiddlePanel  {
+	min-height: 500px !important;
+	border-bottom: 0px solid #fff; 
+}	#introTopPanel div, #introTopPanel aside {
+	width: 98%;
+	height: 250px;  
+}		#introTopPanel div {
+	margin: 1% 0 0 1%;
+}		#introTopPanel aside {
+ 
+}
+
+
+
+#introMiddlePanel div {
+	width: 90%; 
+	margin: 1% 0 0 1%; 
+	float: left; 
+}		#introMiddlePanel figure img {
+	margin: 3em 0 0 0;  
+	width: 200%; 
+	float: left; 
+}
+
+#introMainCall {
+	width:	75%; 
+	margin: 1.5% 12.5% 0 12.5%; 
+}
+}	@media screen and (max-width: 480px) and (min-width: 240px){
+
+.introHeaderContainer {
+
+}	.introHeaderContainer p {
+	margin: 0.5% 0.5% 0 0.5%;
+	width: 98%; 
+}	.introHeaderContainer h1 img {
+	width: 100%; 
+}
+
+#introTopPanel  {
+	min-height: 750px !important;
+	border-bottom: 0px solid #fff; 
+}	#introTopPanel div, #introTopPanel aside {
+	width: 98%;
+	height: 375px;  
+}		#introTopPanel div {
+	margin: 1% 0 0 1%;
+}		#bitCoinSocialBar {
+		left: 0%; 
+}				#bitCoinTwitter, #bitCoinFB {
+		width: 50%; 
+		height: 25%; 
+}				#bitCoinSocialBar p {
+		margin: 22.5% 0 0 0;
+}	.bitCoinLeftBox {
+		float: left;
+		width: 65.5%;
+		margin: 0; 
+}			#bitCoinInfoBawks p {
+					width: 50%;
+					text-align: center; 
+}			#bitCoinInfoBawks p strong {
+					font-weight: bold; 
+					font-size: 1.3em;  
+}			#bitCoinProgressBar {
+		width: 59.5%;
+		margin: 0 0 0 5.5%; 
+}	#bitCoinCallField  { 
+	left: 1%;
+}	#bitCoinCallField p {
+	margin-left: 3%; 
+}
+
+#introMiddlePanel figure img { 
+	margin: 1em 0 0 0;  
+}
+
+#introMainCall {
+	width:	90%; 
+	margin: 1.5% 5% 0 5%; 
+}
+}
