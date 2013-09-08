@@ -1,0 +1,55 @@
+doctype 5
+html(lang="en")
+  head
+    title DonateWare
+    link(rel='stylesheet', href='stylesheets/screen.css')
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+
+  body
+    div(class='container' id='introPage')
+      header(class='introHeaderContainer')
+        h1: img(src='images/DonateWareLogo.png', alt='DonateWare')
+        p A free and legal Bit Torrent client that runs on donations.
+
+      section(id='introTopPanel')
+        div(class='introTextPanel')
+          h2 The New Backbone of Opensource
+          p DonateWare will let you easily share programming projects, then gently remind users to donate back to you. Particularly if they have enjoyed a lot of use from your utility.
+          br
+          br
+          p DonateWare hopes to grow beyond its initial userbase to become a legal alternative to the Pirate Bay. Giving anyone a chance to easily share their creations with the rest of the internet in exchange for donations.
+        aside
+          span(class='bitCoinLeftBox', id='bitCoinInfoBawks')
+            p <strong>0</strong></br></br>Backers
+            p <strong>0/50</strong></br></br>Bitcoin
+            p <strong id="countdown"></strong></br></br>Days Left
+          span(id='bitCoinSocialBar')
+            a(href='https://twitter.com/share', target='_blank')
+              span(id='bitCoinTwitter')
+            a(href='', target='_blank')
+              span(id='bitCoinFB')
+            p Give DonateWare some social support
+          progress(class='bitCoinLeftBox', id='bitCoinProgressBar', value='0', max='50')
+          span(class='bitCoinLeftBox' id='bitCoinCallField')
+            a(class='coinbase-button', data-code='867d4c526313ed5f935add2531af1c78', data-button-style='custom_large', 
+            href='https://coinbasecom/checkouts/867d4c526313ed5f935add2531af1c78') Donate Bitcoins
+            script(type='text/javascript', src='https://coinbase.com/assets/button.js')
+            br
+            p Help make DonateWare a reality
+
+      section(id='introMiddlePanel')
+        div(class='introTextPanel') 
+          h2 For a Better Internet
+          p Donations can support a richer opensource ecosystem than just 'free.' Some people need a modest stream of income to justify putting work into a utility. A centralized app that makes donations easy for the end user will drive far more donations. More donations means more and better utilities for end users. Best of all DonateWare only asks from people who want to give. A classic win-win for everyone involved.
+        figure
+          img(src='images/for-a-better-internet.jpg')
+
+      section(id='introBottomPanel')
+        div(class='introTextPanel')
+          h3 Rigorous Malware Checking
+          h3 No Annoying Ads
+          h3 A Step Toward Copyright Sanity
+        a(href='prototype', id='introMainCall')
+          p Check Out the Prototype
+
+script(type='text/javascript', src='javascripts/donateware-utility.js')

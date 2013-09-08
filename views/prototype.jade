@@ -1,0 +1,48 @@
+doctype 5
+html(lang="en")
+    head
+        title Prototype
+        link(rel='stylesheet', href='stylesheets/screen.css')
+        script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+        meta(name='description', content='DonateWare is a free and legal Bit Torrent client that runs on donations.')
+
+    body
+    div(class='container')
+        a(href="upload", class="dButton", id="uploadButton") Upload
+
+        section(id="mainSearchPanel")
+            form
+                input(id="mainSearchField", autofocus type="text", name="mainSearchBar", placeholder=" Search DonateWare")
+                fieldset
+                    input(type="radio", name="searchTypes", value="All", checked="true") 
+                    span All
+                    input(type="radio", name="searchTypes", value="Apps")
+                    span Apps
+                    input(type="radio", name="searchTypes", value="Music", checked="true")
+                    span Music
+                    input(type="radio", name="searchTypes", value="Video")
+                    span Video
+                    input(type="radio", name="searchTypes", value="DonateWareQs")
+                    span Questions about Donateware
+                input(class="dButton", id="mainSearchButton", type="submit", value="Search")
+
+        section(id="mainSearchResults")
+            div(id="mainResultsField")
+                nav
+                    a(href="")
+                        h3 Most Downloads
+                    a(href="")
+                        h3 Highest Rated
+                    a(href="")
+                        h3 Newest
+            p(class="resultsField") Total Results:
+    
+        section(id="mainUploadForm")
+            h2 D'oh!
+            br
+            p I'm still working on this feature, but I'll be done in a hurry, I promise!
+
+        p(id="dgitHubNote") Check up on the lastest updates to the Prototype at: 
+            a(href="") GitHub
+
+        script(type='text/javascript', src="javascripts/donateware-utility.js")

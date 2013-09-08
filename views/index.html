@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>DonateWare</title>
+<meta name="description" content="DonateWare is a free and legal Bit Torrent client that runs on donations.">
+<link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+</head>
+
+<body>
+<div class="container" id="introPage">
+<header class="introHeaderContainer">
+<h1><img src="DonateWareLogo.png" alt="Donate Ware" / ></h1>
+<p>A free and legal Bit Torrent client that runs on donations.</p>
+</header>
+
+<section id="introTopPanel">
+<div class="introTextPanel">
+	<h2>The New Backbone of Opensource</h2>
+	<p>DonateWare will let you easily share programming projects, then gently remind users to donate back to you. Particularly if they have enjoyed a lot of use from your utility.
+	<br/>
+  <br/>
+	<p>DonateWare hopes to grow beyond its initial userbase to become a legal alternative to the Pirate Bay. Giving anyone a chance to easily share their creations with the rest of the internet in exchange for donations.</p>
+</div>
+<aside>
+  <span class="bitCoinLeftBox" id="bitCoinInfoBawks">
+  	<p><strong>1</strong></br></br>Backers</p>
+  	<p><strong>10/50</strong></br></br>Bitcoins</p>
+  	<p><strong id="countdown"></strong></br></br>Days Left</p> 
+<script>$(document).ready(function() {
+  var today = new Date();
+    var BigDay = new Date("September 09, 2013");
+    var msPerDay = 24 * 60 * 60 * 1000 ;
+    var timeLeft = (BigDay.getTime() - today.getTime());
+    var e_daysLeft = timeLeft / msPerDay;
+    var daysLeft = Math.floor(e_daysLeft);
+      $("#countdown").text(daysLeft);
+});
+</script>
+  </span>
+  <span id="bitCoinSocialBar">
+    <a href="https://twitter.com/share" target="_blank"><span id="bitCoinTwitter"></span></a>
+    <span id="bitCoinFB"></span>
+  	<p>Give DonateWare some social support</p>
+  </span>
+  <progress class="bitCoinLeftBox" id="bitCoinProgressBar" value="10" max="50">
+  </progress>
+  <span class="bitCoinLeftBox" id="bitCoinCallField">
+	<a class="coinbase-button" data-code="867d4c526313ed5f935add2531af1c78" data-button-style="custom_large" href="https://coinbase.com/checkouts/867d4c526313ed5f935add2531af1c78">Donate Bitcoins</a>
+	</br><p>Help make DonateWare a reality</p><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script> 
+  </span>
+</aside>
+</section>
+
+<section id="introMiddlePanel">
+<div class="introTextPanel"> 
+	<h2>For a Better Internet</h2>
+	<p>Donations can support a richer opensource ecosystem than just 'free.' Some people need a modest
+	stream of income to justify putting work into a utility. A centralized app that makes donations easy for the end user will drive far more donations. More donations means more and better utilities for end users. Best of all DonateWare only asks from people who want to give. A classic win-win for everyone involved.</p>
+</div>
+<figure><img src="images/for-a-better-internet.jpg" /></figure>
+</section>
+
+<section id="introBottomPanel">
+<div class="introTextPanel">
+	<h3>Rigorous Malware Checking</h3>
+	<h3>No Annoying Ads</h3>
+	<h3>A Step Toward Copyright Sanity</h3>
+</div>
+<a href="prototype" id="introMainCall"><p>Check Out the Prototype</p></a>
+</section>
+
+</div>
+</body>
+
+</html>
