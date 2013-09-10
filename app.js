@@ -9,24 +9,7 @@ var jade = require('jade');
 var mongodb = require('mongodb');
 var mongoose = require('mongoose');
 var sass = require('node-sass');
-
-/*
-var connect = require('connect')
-  , sass = require('../sass');
-
-// Setup server
-// $ curl http://localhost:3000/test.css
-
-var server = connect.createServer(
-  sass.middleware({
-      src: __dirname
-    , dest: __dirname + '/public'
-    , debug: true
-    , outputStyle: 'compressed'
-  }),
-  connect.static(__dirname + '/public')
-);
-*/
+var port = process.env.PORT || 3000; 
 
 // Configuration
 
@@ -60,6 +43,6 @@ app.configure('production', function(){
 app.get('/', routes.index);
 app.get('/prototype', routes.prototype)
 
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log("Express server listening on port 3000");
 });
