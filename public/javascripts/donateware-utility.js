@@ -3,12 +3,13 @@ $(document).ready(function() {
 	$('#mainSearchPanel form').submit(function(e) {
 		e.preventDefault();
 		$('#mainSearchResults').show();
-		$('#dgitHubNote').css('margin-top', '-1.7%');
+		$('#gitHubNote').css('margin-top', '-1.7%');
 	});
 	$('#uploadButton').click(function(e) {
 		e.preventDefault();
 		$('#mainSearchPanel, #mainSearchResults').hide();
 		$('#mainUploadForm').show();
+		$('#gitHubNote').css('margin-top', '-1.7%');
 	});
 
   var today = new Date();

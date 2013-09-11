@@ -38,6 +38,10 @@ h3 {
 
 a {
     text-decoration: none;
+    color: #D0392A;
+}
+a:hover {
+    color: #a61000; 
 }
 
 input:focus {
@@ -64,6 +68,7 @@ input:focus {
 
 .dButton:hover {
     background-color: #a61000;
+    color: #fff;
 }
 
 .dButton:active {
@@ -180,7 +185,7 @@ input:focus {
 }
 
 #bitCoinInfoBawks p {
-    width: 30%;
+    width: 45%; // Once a time limit is re-instituted I will need to change this. 
     float: left;
     display: inline-block;
     text-align: center;
@@ -312,8 +317,8 @@ progress::-moz-progress-bar {
 }
 
 #mainSearchPanel fieldset {
-    width: 60%;
-    margin: 0 7% 0 3%;
+    width: 65%;
+    margin: 0 0 0 3%;
     display: inline-block;
     font-size: .8em;
     float: right;
@@ -390,17 +395,13 @@ progress::-moz-progress-bar {
     margin: 2% 12% 0 25%;
 }
 
-#dgitHubNote {
+#gitHubNote {
     float: right;
-    position: relative;
+    position: fixed;
     color: #999;
     font-size: .8em;
-    right: 28.7%;
-    margin: 2% 0 1% 0;
-}
-
-#dgitHubNote a {
-    color: #D0392A;
+    right: 40px;
+    bottom: 10px; 
 }
 
 /*****Media Queries*****/
@@ -430,6 +431,9 @@ progress::-moz-progress-bar {
     #bitCoinCallField p {
         margin-left: -3%;
     }
+    #mainSearchPanel fieldset {
+        margin: 0.5% -4% 0 2%;
+    }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1051 px) {
@@ -439,10 +443,15 @@ progress::-moz-progress-bar {
     #bitCoinCallField p {
         margin-left: -3%;
     }
+    #mainSearchPanel fieldset {
+        margin: 0.5% -4% 0 2%;
+    }
 }
 
 /***Tablets***/
 @media screen and (max-width: 1050px) and (min-width: 600px) {
+    //Intropage 
+
     #introTopPanel, #introMiddlePanel {
         min-height: 500px !important;
         border-bottom: 0px solid #fff;
@@ -467,6 +476,26 @@ progress::-moz-progress-bar {
         width: 50%;
         margin: 1.5% 25% 0 25%;
     }
+
+    //Prototype
+    #mainSearchPanel form {
+        width: 75%;
+        margin: 2% 12.5% 0 12.5%;
+    }
+    #uploadButton {
+        width: 10%;
+    }
+    #mainSearchPanel fieldset {
+        width: 70%;
+        margin: 0.5% -2% 0 2%;
+    }
+    #mainSearchResults {
+    width: 90%;
+    margin: 2% 5% 0 5%;
+    }
+    #mainSearchResults a {
+        width: 25%; 
+    }
 }
 
 /***Mobile***/
@@ -482,7 +511,15 @@ progress::-moz-progress-bar {
     #introTopPanel div {
         margin: 1% 0 0 1%;
     }
-    #introTopPanel aside {}
+    #bitCoinInfoBawks {
+        height: 30%; 
+    }
+    #bitCoinCallField {
+        left: 3%;
+    }   #bitCoinCallField p {
+        margin-left: 3%;
+        width: 100%; 
+    }
     #introMiddlePanel div {
         width: 90%;
         margin: 1% 0 0 1%;
@@ -497,6 +534,39 @@ progress::-moz-progress-bar {
         width: 75%;
         margin: 1.5% 12.5% 0 12.5%;
     }
+
+    // Prototype 
+
+    #mainSearchPanel form {
+        width: 100%;
+        margin: 3% 0 0 0;
+    }
+    #uploadButton {
+        width: 16%;
+        padding: 1.2%;
+        margin: -1.5% 8% 1% 0; 
+    }
+    #mainSearchPanel fieldset {
+        width: 95%;
+        margin: 10% 0 -45% 5%;
+    }
+    #mainSearchResults {
+        width: 100%;
+        margin: 15% 0 0 0;
+    }
+    #mainSearchResults a {
+        width: 32.5%; 
+    }
+    #gitHubNote {
+        right: 10px;
+        bottom: 5px; 
+    }
+    #mainSearchButton {
+        width: 30%;
+        padding: 1.2%; 
+        margin: 0 0 0 10%; 
+    }
+
     /***Small Mobile***/
 }
 
@@ -538,6 +608,7 @@ progress::-moz-progress-bar {
     #bitCoinInfoBawks p {
         width: 50%;
         text-align: center;
+        margin: 3% 0 0 0; 
     }
     #bitCoinInfoBawks p strong {
         font-weight: bold;
@@ -545,13 +616,7 @@ progress::-moz-progress-bar {
     }
     #bitCoinProgressBar {
         width: 59.5%;
-        margin: 0 0 0 5.5%;
-    }
-    #bitCoinCallField {
-        left: 1%;
-    }
-    #bitCoinCallField p {
-        margin-left: 3%;
+        margin: 0% 0 0 5.5%;
     }
     #introMiddlePanel figure img {
         margin: 1em 0 0 0;
