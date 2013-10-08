@@ -1,14 +1,8 @@
-doctype 5
-html(lang="en")
-    head
+include header.jade
+
         title Prototype
-        link(rel='stylesheet', href='stylesheets/screen.css')
-        link(rel="icon", type="image/x-icon", href="images/favicon.ico")
-        script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
         meta(name='description', content='DonateWare is a free and legal Bit Torrent client that runs on donations.')
 
-    body
-    div(class='container')
         a(href="upload", class="dButton", id="uploadButton") Upload
 
         section(id="mainSearchPanel")
@@ -37,13 +31,5 @@ html(lang="en")
                     a(href="")
                         h3 Newest
             p(class="resultsField") Total Results:
-    
-        section(id="mainUploadForm")
-            h2 D'oh!
-            br
-            p I'm still working on this feature, but I'll be done in a hurry, I promise!
 
-        p(id="gitHubNote") Check up on the lastest updates to the Prototype at: 
-            a(href="https://github.com/Aristekrat/DonateWare") GitHub
-
-        script(type='text/javascript', src="javascripts/donateware-utility.js")
+        include footer.jade

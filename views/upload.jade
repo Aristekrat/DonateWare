@@ -1,0 +1,14 @@
+include header.jade
+        title Upload to DonateWare
+        meta(name="description", content="Upload your files to DonateWare.") 
+
+    div(id="dUploadPage")  
+        h1 Upload
+        p DonateWare is still a prototype so it isn't accepting file uploads yet. However, you can leave any questions or comments you have here.
+        form(action="/upload", method="post", id="dUploadForm")
+            input(class="smallUploadField", id="dTitleField", label="title", type="text", name="comment[title]", maxlength="100", autofocus="true", placeholder=" Title (Required)", required="true")
+            input(class="smallUploadField", id="dNameField", label="name", type="text", name="comment[name]", maxlength="100", placeholder=" Your Name (Optional)")
+            textarea(id="dCommentField", placeholder=" Your Question or Comment (Required)", name="comment[text]", maxlength="1000", required="true")
+            input(class="dButton", id="dUploadButton", type="submit", value="Submit")
+
+include footer.jade
