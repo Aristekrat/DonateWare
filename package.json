@@ -9,8 +9,8 @@
         "jade": "~0.35",
         "nodeunit": "~0.8",
         "node-inspector": "~0.4",
-		"grunt": "~0.4.1"
-	"express-validator": "0.8.0"
+		"grunt": "~0.4.1",
+		"express-validator": "0.8.0"
     },
     "subdomain": "donateware",
     "scripts": {
