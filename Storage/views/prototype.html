@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<!--TODO: strip the container from the main search field and filter upload through it. Bug Fix #1 - Got to Add Upload. #Bug Fix #2, got to fix the sort tabs and add a jQuery active state.--> 
+<html>
+<head>
+<title>Prototype</title>
+<meta name="description" content="DonateWare is a free and legal Bit Torrent client that runs on donations.">
+<link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script src="js/header.js" ></script>
+<script src="js/app.js" ></script>
+</head>
+
+<body>
+<div class="container">
+<a href="upload" class="dButton" id="uploadButton">Upload</a>
+
+<section id="mainSearchPanel">
+<form>
+	<input id="mainSearchField" autofocus type="text" name="mainSearchBar" placeholder=" Search DonateWare"/>
+	<fieldset>
+		<input type="radio" name="searchTypes" value="All" checked /><span>All</span>
+		<input type="radio" name="searchTypes" value="Apps" /><span>Apps</span>
+		<input type="radio" name="searchTypes" value="Music"/><span>Music</span>
+		<input type="radio" name="searchTypes" value="Video" /><span>Video</span>
+		<input type="radio" name="searchTypes" value="DonateWareQs" /><span>Questions about Donateware</span>
+	</fieldset>
+	<input class="dButton" id="mainSearchButton" type="submit" value="Search" />
+</form>
+</section>
+
+<section id="mainSearchResults">
+	<div id="mainResultsField">
+		<nav>
+			<a href=""><h3>Most Downloads</h3></a>
+			<a href=""><h3>Highest Rated</h3></a>
+			<a href=""><h3>Newest</h3></a>
+		</nav>
+	</div>
+	<p class="resultsField">Total Results: </p>
+</section>
+	
+<section id="mainUploadForm">
+	<h2>D'oh!</h2>
+	<br />
+	<p>I'm still working on this feature, but I'll be done in a hurry, I promise!</p>
+</section>	
+
+<p id="dgitHubNote">Check up on the lastest updates to the Prototype at: <a href="">GitHub</a><p>
+
+</div>
+
+</body>
+
+</html>

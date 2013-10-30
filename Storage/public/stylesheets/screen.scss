@@ -83,18 +83,6 @@ input:focus {
     box-shadow: 0 0 0 #fff;
 }
 
-#homePageLink {
-    width: 4em; 
-    height: 4em; 
-    background: url('../images/SmallD.png') 50% no-repeat;
-    position: absolute; 
-    top: 0%; 
-    left: .5%; 
-    opacity: .35; 
-}   #homePageLink:hover {
-    opacity: 1; 
-}
-
 /*****Intro Page*****/
 
 @import "intropage";
@@ -106,10 +94,6 @@ input:focus {
 /*****Upload*****/ 
 
 @import "upload";
-
-/*****Success Page*****/ 
-
-@import "success";
 
 /*****Media Queries*****
 * These evidently cannot be moved to an external file because SASS 

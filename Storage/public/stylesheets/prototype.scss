@@ -77,19 +77,14 @@
 }
 
 #mainResultsField {
-    height: auto; 
+    height: 500px;
     box-shadow: 0 -1px 1px 1px #9f9e9f;
-}   #mainResultsField nav {
-    width: 100%; 
-    height: 25px; 
-    margin-bottom: 2%; 
 }
 
 .resultsField {
     font-size: 0.9em;
     color: #777;
-    margin: 1% 0 0% 1%;
-    padding-bottom: 1%; 
+    margin: 1% 0 1% 1%;
 }
 
 #mainUploadForm {
@@ -104,31 +99,4 @@
     font-size: .8em;
     right: 40px;
     bottom: 10px; 
-}
-
-.dCommentBlock {
-    width: 96%; 
-    height: auto; 
-    border-bottom: 1px solid rgba(208, 57, 42, 0.2); 
-    margin: 1%; 
-    padding: 1%;
-    line-height: 150%;
-
-}   .dCommentBlock h2 {
-    float: left;
-    width: 35%; 
-}
-    .dCommentBlock aside {
-    float: right; 
-    color: #888; 
-    font-size: 0.8em; 
-    width: 40%; 
-}   .dCommentBlock span {
-    float: right;
-    width: 20%;
-    font-size: .9em; 
-    margin: 0 2.5%; 
-}
-    .dCommentBlock p {
-    margin: 7% 1% 2% 1%; 
 }

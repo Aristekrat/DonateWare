@@ -21,4 +21,25 @@ include header.jade
                     span Questions about Donateware
                 input(class="dButton", id="mainSearchButton", type="submit", value="Search")
 
+section(id="mainSearchResults")
+    div(id="mainResultsField")
+        nav
+            a(href="")
+                h3 Most Downloads
+            a(href="")
+                h3 Highest Rated
+            a(href="")
+                h3 Newest
+        div(id="dCommentContainer")
+        -   var commentCount = 0; 
+        -   for(var comment in comments) {
+        -       commentCount++; 
+                div(class="dCommentBlock")
+                    h2= comments[comment].title
+                    aside= comments[comment].date
+                    span= comments[comment].name
+                    p= comments[comment].text
+        - };
+        p(class="resultsField") Total Results: #{commentCount}
+
 include footer.jade
