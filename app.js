@@ -42,12 +42,6 @@ app.get('/upload', routes.upload);
 app.get('/success', routes.success);
 app.get('/comments', routes.loadComments);
 
-
-var username = process.env.MONGO_USERNAME; 
-var password = process.env.MONGO_PASSWORD; 
-var dbURL = 'mongodb://' + username + ':' + password + '@ds053168.mongolab.com:53168/donateware';
-console.log(dbURL);
-
 // Database
 
 app.post('/upload', function (req, res, next) {
