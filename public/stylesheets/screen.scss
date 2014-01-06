@@ -182,54 +182,60 @@ input:focus {
     #introMiddlePanel figure img {
         margin-top: 2.5em !important;
     }
+    #introBottomPanel {
+        float: left;
+        padding-bottom: 10%;
+    }
     #introMainCall {
         width: 50%;
         margin: 1.5% 25% 0 25%;
     }
 
     //Prototype
-    #mainSearchPanel form {
-        width: 75%;
-        margin: 2% 12.5% 0 12.5%;
-    }
+
     #uploadButton {
-        width: 10%;
+        width: 12%;
+        position: absolute;
+        top: 1em;
+        right: -1em;
+        padding: 1% 0;
     }
-    #mainSearchPanel fieldset {
-        width: 70%;
-        margin: 0.5% -2% 0 2%;
+    #mainSearchPanel form {
+        width: 90%;
+        margin: 10% 5% 0 5%;
+    }   #mainSearchPanel fieldset {
+            width: 70%;
+            margin: 0.5% -2% 0 2%;
     }
+
     #mainSearchResults {
-    width: 90%;
-    margin: 2% 5% 0 5%;
-    }
-    #mainSearchResults a {
-        width: 25%; 
+        width: 90%;
+        margin: 4% 5% 0 5%;
+    }   #mainSearchResults a {
+            width: 25%; 
     }
 }
 
 /***Mobile***/
 @media screen and (max-width: 599px) and (min-width: 240px) {
     #introTopPanel, #introMiddlePanel {
-        min-height: 500px !important;
         border-bottom: 0px solid #fff;
+        float: left;
+        clear: both;
+        display: block;
     }
     #introTopPanel div, #introTopPanel aside {
-        width: 98%;
-        height: 250px;
+          width: 98%;
     }
     #introTopPanel div {
-        margin: 1% 0 0 1%;
-    }
-    #bitCoinInfoBawks {
-        height: 30%; 
+        margin: 1% 0 -1% 1%;
     }
     #bitCoinCallField {
-        left: 3%;
+        left: 10%;
     }   #bitCoinCallField p {
-        margin-left: 3%;
-        width: 100%; 
-    }
+            margin-left: 1%;
+            width: 100%;
+    }   
     #introMiddlePanel div {
         width: 90%;
         margin: 1% 0 0 1%;
@@ -237,51 +243,69 @@ input:focus {
     }
     #introMiddlePanel figure img {
         margin: 3em 0 0 0;
-        width: 200%;
+        width: 250%;
         float: left;
     }
     #introMainCall {
         width: 75%;
-        margin: 1.5% 12.5% 0 12.5%;
+        margin: 1.5% 12.5% 0% 12.5%;
+    }
+    #introBottomPanel {
+        float: left;
+        padding-bottom: 10%;
     }
 
     // Prototype 
 
     #mainSearchPanel form {
         width: 100%;
-        margin: 3% 0 0 0;
+        margin: 14% 0 0 0;
     }
     #uploadButton {
-        width: 16%;
+        width: 25%;
         padding: 1.2%;
-        margin: -1.5% 8% 1% 0; 
+        position: absolute;
+        top: 1.5em;
+        right: 0em; 
     }
     #mainSearchPanel fieldset {
-        width: 95%;
-        margin: 10% 0 -45% 5%;
+        width: 90%;
+        margin-left: 5%;
+      //  margin: 10% 0 -45% 5%;
     }
     #mainSearchResults {
         width: 100%;
-        margin: 15% 0 0 0;
-    }
-    #mainSearchResults a {
-        width: 32.5%; 
+        margin: 10% 0 0 0;
+    }   #mainSearchResults a {
+            width: 32.5%; 
+    }   .dCommentBlock {
+            margin: 5% 1% 1% 1%;
+    }       .dCommentBlock h2 {
+                width: 60%;
+    }       .dCommentBlock span {
+                width: 35%;
+    }       .dCommentBlock aside {
+                display: none;
+    }       .dCommentBlock p {
+                margin: 10% 1% 4% 1%;
     }
     #gitHubNote {
-        right: 10px;
-        bottom: 5px; 
+        display: none;
     }
     #mainSearchButton {
-        width: 30%;
+        width: 35%;
         padding: 1.2%; 
-        margin: 0 0 0 10%; 
+        margin: 5% 0 0 10%; 
     }
-
-    /***Small Mobile***/
+    #dUploadPage {
+        width: 95%;
+        margin: 2.5%;
+    }
 }
+    
+    /***Small Mobile***/
 
 @media screen and (max-width: 480px) and (min-width: 240px) {
-    .introHeaderContainer {}
     .introHeaderContainer p {
         margin: 0.5% 0.5% 0 0.5%;
         width: 98%;
@@ -290,25 +314,26 @@ input:focus {
         width: 100%;
     }
     #introTopPanel {
-        min-height: 750px !important;
         border-bottom: 0px solid #fff;
     }
     #introTopPanel div, #introTopPanel aside {
         width: 98%;
-        height: 375px;
+        margin-top: 4%;
+    }   #introTopPanel div {
+            margin: 1% 0 0 1%;
+    }   #introTopPanel aside {
+            margin: 16% 0 0 0;
     }
-    #introTopPanel div {
-        margin: 1% 0 0 1%;
-    }
+    #bitCoinCallField {
+        left: 7%;
+    } 
     #bitCoinSocialBar {
-        left: 0%;
-    }
-    #bitCoinTwitter, #bitCoinFB {
-        width: 50%;
-        height: 25%;
-    }
-    #bitCoinSocialBar p {
-        margin: 22.5% 0 0 0;
+        left: -1%;
+        top: -2em;
+    }   #bitCoinTwitter, #bitCoinFB {
+            width: 80%;
+    }   #bitCoinSocialBar p {
+            display: none;
     }
     .bitCoinLeftBox {
         float: left;
@@ -331,8 +356,27 @@ input:focus {
     #introMiddlePanel figure img {
         margin: 1em 0 0 0;
     }
+    #introBottomPanel div h3 {
+        font-size: 0.95em;
+    }
     #introMainCall {
         width: 90%;
         margin: 1.5% 5% 0 5%;
+    }   #introMainCall p {
+            font-size: 1.2em;
+    }
+
+    // Prototype 
+    #homePageLink {
+        display: none;
+    }
+    #mainSearchPanel form {
+        margin: 18% 0 0 0;
+    }
+}
+
+@media screen and (max-width: 299px) and (min-width: 200px) {
+    #bitCoinCallField {
+        padding-top: 30%;
     }
 }

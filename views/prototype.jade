@@ -1,10 +1,6 @@
 include header.jade
 
-        title Prototype
-        meta(name='description', content='DonateWare is a free and legal Bit Torrent client that runs on donations.')
-
         a(href="upload", class="dButton", id="uploadButton") Upload
-
         section(id="mainSearchPanel")
             form(action="/comments", method="get")
                 input(id="mainSearchField", autofocus type="text", name="mainSearchBar", placeholder=" Search DonateWare")
@@ -18,7 +14,7 @@ include header.jade
                     input(type="radio", name="searchTypes", value="Video")
                     span Video
                     input(type="radio", name="searchTypes", value="DonateWareQs")
-                    span Questions about Donateware
+                    span Questions
                 input(class="dButton", id="mainSearchButton", type="submit", value="Search")
 
 include footer.jade
